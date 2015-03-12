@@ -10,7 +10,7 @@ namespace vmalogrithms
 			return;
 		}
 		bool elementSwapped = true;
-		IterType lastButOne = std::prev(end,-1);
+		IterType lastButOne = std::prev(end,1);
 		while(not elementSwapped)
 		{
 			for(IterType currIter = begin, currIter != lastButOne; ++currIter)
