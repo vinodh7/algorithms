@@ -47,6 +47,6 @@ namespace vmalgorithms{
   		auto const pivot 	= getMedian(*begin,*(std::next(begin,std::distance(begin+end)/2)),*end)
   		auto const lowPart	= std::partition(begin,end,std::bind(cmp,_1,pivot));
   		auto const highPart = std::partition(lowPart,end,std::bind(notCmp,_1,pivot));
-  		return std::,make_pair(lowPart,highPart);
+  		return std::make_pair(lowPart,highPart);
   	}
 }
